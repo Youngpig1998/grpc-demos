@@ -128,7 +128,7 @@ import "google.golang.org/grpc"
 
 
 
-## gRPC入门示例
+## gRPC入门示例（demo2）
 
 ### 编写proto代码
 
@@ -136,7 +136,7 @@ gRPC是基于Protocol Buffers。
 
 `Protocol Buffers`是一种与语言无关，平台无关的可扩展机制，用于序列化结构化数据。使用`Protocol Buffers`可以一次定义结构化的数据，然后可以使用特殊生成的源代码轻松地在各种数据流中使用各种语言编写和读取结构化数据。
 
-关于`Protocol Buffers`的教程可以自行在网上搜索，本文默认读者熟悉`Protocol Buffers`。
+关于`Protocol Buffers`的知识可以查看[这里](https://github.com/Youngpig1998/go-learning/tree/master/workspace/protobuf)。
 
 ```protobuf
 syntax = "proto3"; // 版本声明，使用Protocol Buffers v3版本
@@ -166,10 +166,12 @@ message HelloReply {
 执行下面的命令，生成go语言源代码：
 
 ```bash
-protoc -I hello_server/ hello_server/pb/hello.proto --go_out=plugins=grpc:hello_server/pb
+cd hello
+
+protoc -I=. hello.proto --go_out=plugins=grpc:.
 ```
 
-在`gRPC_demo/hello_server/pb`目录下会生成`hello.pb.go`文件。
+在`demo2/hello`目录下会生成`hello.pb.go`文件。
 
 ### 编写Server端Go代码
 
@@ -282,7 +284,6 @@ go run hello_client/main.go
 得到输出如下（注意要先启动server端再启动client端）：
 
 ```bash
-$ ./client 
 Greeting: Hello q1mi!
 ```
 
@@ -484,9 +485,7 @@ cd grpc-go/examples/helloworld
 
   * https://grpc.io/docs/languages/go/
 
-  
-
-
+* 
 
 ## References
 
