@@ -1,7 +1,7 @@
 
 syntax = "proto3";
 
-option go_package = "github.com/Youngpig1998/grpc-example/route";
+option go_package = "github.com/Youngpig1998/grpc-demos/demo1/route";
 
 
 package route;

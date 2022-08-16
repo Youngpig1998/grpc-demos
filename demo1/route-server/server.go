@@ -2,14 +2,14 @@ package main
 
 import (
 	"context"
-	"github.com/Youngpig1998/grpc-example/utils"
+	"github.com/Youngpig1998/grpc-demos/demo1/utils"
 	"google.golang.org/protobuf/proto"
 	"io"
 	"log"
 	"net"
 	"time"
 
-	pb "github.com/Youngpig1998/grpc-example/route"
+	pb "github.com/Youngpig1998/grpc-demos/demo1/route"
 	"google.golang.org/grpc"
 )
 

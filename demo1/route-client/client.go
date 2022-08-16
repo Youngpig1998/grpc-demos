@@ -4,13 +4,13 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"github.com/Youngpig1998/grpc-example/utils"
+	"github.com/Youngpig1998/grpc-demos/demo1/utils"
 	"io"
 	"log"
 	"os"
 	"time"
 
-	pb "github.com/Youngpig1998/grpc-example/route"
+	pb "github.com/Youngpig1998/grpc-demos/demo1/route"
 	"google.golang.org/grpc"
 )
 
@@ -124,5 +124,4 @@ func main() {
 
 	getFeature(client)
 
-	//runForth(client)
 }

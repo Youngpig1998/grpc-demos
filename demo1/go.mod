@@ -1,4 +1,4 @@
-module github.com/Youngpig1998/grpc-example
+module github.com/Youngpig1998/grpc-demos/demo1
 
 go 1.19
 

@@ -3,7 +3,7 @@ package utils
 import (
 	"bufio"
 	"fmt"
-	pb "github.com/Youngpig1998/grpc-example/route"
+	pb "github.com/Youngpig1998/grpc-demos/demo1/route"
 	"log"
 	"math"
 )
